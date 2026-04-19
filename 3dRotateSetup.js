@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import { GridHelper} from "./three/src/helpers/GridHelper.js";
+// import { GridHelper} from "./three/src/helpers/GridHelper.js";
 
 
 const scene = new THREE.Scene();
@@ -20,17 +20,17 @@ const lights = [];
 
 function setupLights() {
     const ambientLight = new THREE.AmbientLight(0xffffff);
-    scene.add(ambientLight);
+    // scene.add(ambientLight);
     for (const light of lights) {
-        light.intensity = 15; // BLENDER-THREE.JS LIGHT ADJUSTEMENT
+        light.intensity = 1; // BLENDER-THREE.JS LIGHT ADJUSTEMENT
     }
 }
 
 function onSceneLoaded(model)
 {
     scene.add( model );
-    const gridHelper = new THREE.GridHelper( 1, 1 );
-    scene.add( gridHelper );
+    // const gridHelper = new THREE.GridHelper( 1, 1 );
+    // scene.add( gridHelper );
     let meshCount = 0;
 
 
@@ -91,7 +91,7 @@ let camera;
 
 let camPositions = [];
 
-let modelPath = "./caesarBusto.glb"; // or discobolo.glb
+let modelPath = "./Sundial.glb"; // or discobolo.glb
 let minFov = 30;
 function isMobilePlatform() {
     if (navigator.userAgentData) {
