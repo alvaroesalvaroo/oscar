@@ -196,7 +196,7 @@ function init() {
     container.style.zIndex = 100;
     container.style.position = "fixed"; // Clave para que no se mueva con el scroll
     container.style.width = "100vw";        // Mitad de la altura
-    container.style.height = "100vh";        // Mitad de la altura
+    container.style.height = "100dvh";        // Mitad de la altura
     container.style.right = "0";        // Lo pega al borde derecho
     container.style.zIndex = "20";
     // container.style.transform = "translateY(-50%)"; // Corregir altura
